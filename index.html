@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mesh-skeleton-tool by LemonChiu</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Mesh-skeleton-tool</h1>
+        <p>A tool that based on Qt for generating mesh skeleton manually.</p>
+
+        <p class="view"><a href="https://github.com/LemonChiu/Mesh-Skeleton-Tool">View the Project on GitHub <small>LemonChiu/Mesh-Skeleton-Tool</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/LemonChiu/Mesh-Skeleton-Tool/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/LemonChiu/Mesh-Skeleton-Tool/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/LemonChiu/Mesh-Skeleton-Tool">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="mesh-skeleton-tool" class="anchor" href="#mesh-skeleton-tool" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mesh Skeleton Tool</h1>
+
+<p>This utility which based on Qt provides interactive contorl to generate mesh skeleton manually. It's part of my undergraduate graduation project "Skeleton-based Deformation".
+<img src="https://raw.githubusercontent.com/LemonChiu/Mesh-Skeleton-Tool/master/screenshot/screenshot.jpg" align="left" width="800"></p>
+
+<h3>
+<a id="dependency" class="anchor" href="#dependency" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependency</h3>
+
+<ul>
+<li>BOOST</li>
+<li>QT</li>
+<li>CGAL</li>
+<li>GLUT</li>
+<li>libQGLViewer</li>
+</ul>
+
+<p>The x64 version of GLUT and QGLViewer are already in 3rdParty folder. However, BOOST, QT and CGAL still need to be installed separately. This project(x64) has been built successfuly under Visual Studio 2012 with QT4.8.4, Boost 1.53, CGAL4.1 and QGLViewer2.3.17.</p>
+
+<h3>
+<a id="compile" class="anchor" href="#compile" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compile</h3>
+
+<ul>
+<li>Open CMake(cmake-gui).</li>
+<li>Choose "Where is the source code:".</li>
+<li>Choose "Where to build the binaries:".</li>
+<li>Click Configure. You will be asked to create the directory (yes), then for your VS version.</li>
+<li>Click Generate. A VS solution will in the generated build folder.</li>
+<li>In Visual Studio click on the MeshSkeleton project in the solution explorer, select "Set as StartUp Project" and build.</li>
+</ul>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<ul>
+<li>The tool supports .obj and .ply model files.</li>
+<li>The original .cg files are easy to read and store the skeleton data. </li>
+<li>Both model and skeleton files can be drag into the window to load.</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/LemonChiu">LemonChiu</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
